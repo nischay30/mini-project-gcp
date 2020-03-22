@@ -1,8 +1,9 @@
 #!/bin/bash
 
+set -ve
+
 # Import the settings from the common settings file
 source ../projectSettings.sh
-
 
 # These are the settings for the actual table and table family
 declare -a TABLE_FAMILIES=("item" "buyer" "seller")
@@ -35,7 +36,7 @@ fi
 gcloud bigtable instances create $BIGTABLE_INSTANCE_ID \
     --project=$PROJECT_NAME \
     --cluster=$BIGTABLE_CLUSTER_ID \
-    --cluster-zone=$PROJECT_ZONE \
+    --cluster-zone=$BIGTABLE_PROJECT_ZONE \
     --display-name=$BIGTABLE_DISPLAY_NAME \
     $BIGTABLE_CLUSTER_NUM_NODES_FLAG_VALUE \
     $BIGTABLE_CLUSTER_STORAGE_TYPE_FLAG_VALUE \

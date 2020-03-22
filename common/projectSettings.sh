@@ -36,6 +36,9 @@ PUBLIC_ASSETS="certification-public-bucket"
 PUB_SUB_TOPIC_NAME="certification-front-end"
 
 # Bigtable settings...
+## BigTable clusters not in EU as not available for BigQuery
+BIGTABLE_PROJECT_ZONE="us-central1-a"
+
 # The name of our Bigtable instance. An instance is basically a container for our cluster.
 BIGTABLE_INSTANCE_ID="$ORGANIZATION-bt-instance-$ENV_TYPE"
 BIGTABLE_CLUSTER_ID="$ORGANIZATION-bt-cluster-$ENV_TYPE"
