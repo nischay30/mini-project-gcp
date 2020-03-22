@@ -22,3 +22,6 @@ PRIVATE_ASSETS="certification-private-bucket"
 # This is the Storage bucket used for public assets.
 # The entire bucket is public by default
 PUBLIC_ASSETS="certification-public-bucket"
+
+# The name of the Pubsub topic to create / use
+PUB_SUB_TOPIC_NAME="certification-front-end"
