@@ -35,6 +35,9 @@ PUBLIC_ASSETS="certification-public-bucket"
 # The name of the Pubsub topic to create / use
 PUB_SUB_TOPIC_NAME="certification-front-end"
 
+# The name of the Kubernetes cluster used for the products service
+PRODUCT_CLUSTER_NAME="certification-product-k8s"
+
 # Bigtable settings...
 ## BigTable clusters not in EU as not available for BigQuery
 BIGTABLE_PROJECT_ZONE="us-central1-a"
