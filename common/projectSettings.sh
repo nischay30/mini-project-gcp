@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# The name of the project to deploy services into.
+PROJECT_NAME="certification-project-271215"
+
+# Which default region should regional services use?
+PROJECT_REGION="europe-west2"
+
+# The name of the custom network for the product and ads services
+SERVICES_NETWORK="certification-network"
+
+# The name of the product service subnet
+PRODUCT_SUBNET="certification-product-subnet"
+
+# The name of the product service subnet
+ADS_SUBNET="certification-ads-subnet"
