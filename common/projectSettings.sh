@@ -14,3 +14,7 @@ PRODUCT_SUBNET="certification-product-subnet"
 
 # The name of the product service subnet
 ADS_SUBNET="certification-ads-subnet"
+
+# This is the Storage bucket used for private assets.
+# The entire bucket is private by default
+PRIVATE_ASSETS="certification-private-bucket"
