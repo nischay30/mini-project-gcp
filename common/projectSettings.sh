@@ -38,6 +38,15 @@ PUB_SUB_TOPIC_NAME="certification-front-end"
 # The name of the Kubernetes cluster used for the products service
 PRODUCT_CLUSTER_NAME="certification-product-k8s"
 
+# The name of the spanner instance for Products API
+PRODUCT_DB_INSTANCE_NAME="certification-products-spanner-instance"
+
+# The name of the spanner db
+PRODUCT_DB_NAME="cert-products-spanner-db"
+
+# The service account to use to launch the compute engine instances.
+COMPUTE_ENGINE_SERVICE_ACCOUNT=$(gcloud iam service-accounts list --filter='displayName:"Compute Engine default service account"' --format='value(email)')
+
 # Bigtable settings...
 ## BigTable clusters not in EU as not available for BigQuery
 BIGTABLE_PROJECT_ZONE="us-central1-a"
